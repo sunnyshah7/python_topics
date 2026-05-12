@@ -70,6 +70,8 @@ class Student:
 # Inheritance in python and its type
 
 
+# i.) single inheritance 
+
 class Animal:
     def __init__(self,name,breed):
         self.name = name
@@ -84,6 +86,42 @@ class Dog(Animal):
 D = Dog("dubby", "labrador")
 D.show()
 
-# this is single inheritence.
+# ii.) Multilevel Inheritance
 
+class Grandparent:
+    pass
+
+class Parent(Grandparent):
+    pass
+
+class Child(Parent):
+    pass
+
+# 3. Multiple Inheritance
+class Father:
+    def skill1(self):
+        print("Driving")
+
+class Mother:
+    def skill2(self):
+        print("Cooking")
+
+class Child(Father, Mother):
+    pass
+
+c = Child()
+
+c.skill1()
+c.skill2()
+
+# 4. Hierarchical Inheritance
+
+class Parent:
+    pass
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
 
