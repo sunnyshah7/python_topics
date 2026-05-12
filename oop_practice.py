@@ -84,6 +84,6 @@ class Dog(Animal):
 D = Dog("dubby", "labrador")
 D.show()
 
-
+# this is single inheritence.
 
 
