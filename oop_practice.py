@@ -125,3 +125,24 @@ class Child1(Parent):
 class Child2(Parent):
     pass
 
+
+
+# use of super class
+
+class School:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+class Student(School):
+    def __init__(self,name,age,city):
+            self.city = city
+            super().__init__(name,age)
+    def display(self):
+        print(self.name)
+        print(self.age)
+        print(self.city)
+        
+
+Stu = Student("sunny",12,"raxaul")
+Stu.display()
