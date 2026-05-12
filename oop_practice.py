@@ -70,6 +70,20 @@ class Student:
 # Inheritance in python and its type
 
 
+class Animal:
+    def __init__(self,name,breed):
+        self.name = name
+        self.breed = breed
+        
+    
+
+class Dog(Animal):
+    def show(self):
+        print(f"The name of the dog is {self.name} and its breed is {self.breed} ")
+
+D = Dog("dubby", "labrador")
+D.show()
+
 
 
 
